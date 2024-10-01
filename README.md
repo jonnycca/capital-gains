@@ -1,22 +1,5 @@
-# **Tecnologias usadas**
-Java 17 + maven
-
-jackson para auxilio na conversão de json para objeto e objeto para json.
-
-# **Explicando o codigo**
-Utilizei o padrão de projeto strategy junto com o padrão de projetos factory
-para separação de responsabilidades, desacoplamento e aumento de flexibilidade.
-
-A ideia é receber a lista de operações, e para cada operacao que o service receber
-ele é invoca a factory que cria uma instancia da implementacao correspondente ao tipo de operacao
-recebida buy/shell.
-
-Além disso, utilizei imutabilidade para o objeto que armazena as informações das operações.
-
 # **Para testar**
 
-Para resolver o desafio, os dados de entrada (stdin) adicionei ao arquivo
-src/main/resources/operations.txt.
 
 Para que a entrada seja valida,o arquivo espera que cada case esteja em uma linha, por exemplo,
 Caso de teste11, todas as operações na linha 1:
